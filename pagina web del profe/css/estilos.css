@@ -1,0 +1,62 @@
+/* div { 
+    border: 10px solid grey;
+    color: #1bea78;
+    background-color: green;
+    font-size: 50px;
+}
+*/
+
+p {
+    font-size: 30px;
+    color:var(--color-negro);
+    background-color: var(--color-amarillo);
+}
+:root{
+    --color-amarillo: yellow;
+    --color-negro: black;
+    border: 2px solid var(--color-amarillo);
+}
+body{
+    background-image: linear-gradient(#ff0000 ,blue) ;
+    
+    
+}
+
+#uno{
+
+    background-image: url('images/imagen.jpg');
+    background-size: cover;
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    
+
+
+}
+#dos{
+
+    background-color: #212121;
+    background-color: rgb(139, 24, 24);
+
+
+}
+#tres{
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    margin: 10px;
+    background-image: radial-gradient(orange,yellow,blue);
+    opacity: 80%;
+    
+    
+}
+#cuatro{
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    margin: 10px;
+    background-image: conic-gradient(orange,yellow,blue,yellow);
+}
+/*  */
