@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Esmeraldas</title>
+    <link rel="stylesheet" href="css/joda.css">
+</head>
+<body>
+
+    <header>
+        <h1>Venta de Esmeraldas</h1>
+    </header>
+
+    <main>
+        <section class="productos">
+            <div class="producto">
+                <img src="images/esmeraldas.jpeg" alt="Esmeralda 1">
+                <h2>Esmeralda Premium</h2>
+                <p>Precio: $500,000</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="images/esmeraldas.jpeg" alt="Esmeralda 2">
+                <h2>Esmeralda Brillante</h2>
+                <p>Precio: $750,000</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="images/esmeraldas.jpeg" alt="Esmeralda 3">
+                <h2>Esmeralda Natural</h2>
+                <p>Precio: $900,000</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <h2>Formulario de Compra</h2>
+            <form>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="razon">Razón o joya a comprar:</label>
+                <input type="text" id="razon" name="razon" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Tienda de Esmeraldas</p>
+    </footer>
+
+</body>
+</html> 
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Eliminamos márgenes y ponemos fondo de página negro */
+html,
+body {
+  margin: 0;
+  background: #000;
+  image-rendering: pixelated;    /* Pixel art */
+}
+
+/* Bernard Bernoulli: Animación del personaje */
+#bern {
+  /* Tamaño de la viñeta individual */
+  width: 112px;
+  height: 156px;
+  
+  /* Cómo hay establecido un tamaño, centramos */
+  margin: auto;
+  
+  /* Cargamos el sprite (repeat-x se puede omitir, por defecto) */
+  background: url("https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/bernard-sprite.png") repeat-x;
+  
+  /* Aplicamos animación "walk" (0.8seg, 6 frames, repetimos) */
+  animation: walk .8s steps(6) infinite;
+  
+  /* Posicionamos el personaje sobre el camino de madera */
+  position: relative;
+  bottom: 34px;
+}
+
+/* Animación de personaje caminando: Simplemente mueve el sprite sheet hacia la izquierda, realizando el movimiento. */
+@keyframes walk {
+  /* Partimos de la primera viñeta del sprite sheet */
+  from { background-position: 0 }
+  /* Tamaño total de ancho del sprite. 
+     Es negativo para que no "camine" hacia atrás */
+  to { background-position: 672px }
+}
+
+/* Animación del cielo. Efecto "Parallax", más lento que el mar. */
+#sky {
+  background: url("https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/monkey-sky.png") repeat-x;
+  animation: movebg 9s linear infinite;
+}
+
+/* Animación del mar. */
+#sea {
+  background: url("https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/monkey-sea.png") repeat-x;
+  animation: movebg 6s linear infinite;
+  /* Posicionamos el mar, para que no solape al cielo */
+  position: relative;
+  top: 145px;
+  /* Pequeño degradado interior para suavizar el mar. 
+     Puede consumir muchos recursos */
+  box-shadow: 10px 10px 45px rgb(0,0,0, 0.85) inset;
+}
+
+/* Animación para mover cielo y mar */
+@keyframes movebg {
+  0% { background-position: 550px } 
+  100% { background-position: 0 }
+}
+
+/* OPCIONAL: Guybrush */
+#gb {
+  width: 104px;
+  height: 150px;
+  background: url("https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/monkey-guybrush.png") no-repeat;
+  animation: gbwalk 1s steps(6) infinite;
+  margin: auto;
+  position: relative;
+  top: 34px;
+  /* Ojo, muy costoso en rendimiento */
+  /* filter: drop-shadow(5px 5px 5px #000); */
+}
+
+@keyframes gbwalk {
+  0% { background-position: 0 }
+  100% { background-position: -624px }
+}
+    </style>
+</head>
+<body>
+    <div id="sky">
+        <div id="sea">
+          <div id="bern"></div>
+        </div>
+      </div>
+</body>
+</html> -->
