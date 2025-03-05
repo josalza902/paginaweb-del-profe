@@ -1,0 +1,101 @@
+header{
+    /* background-repeat: no-repeat;
+    background-image: url("favicon.svg");
+    height: 150px;*/
+    grid-area: header;
+    display: flex;
+    height: 150px;
+    background-image: url("favicon.svg");
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    
+    
+
+    
+} 
+#titulo{
+    text-align: center;
+
+}
+.esmeraldas {
+    display: grid;
+    grid-template-areas:
+        "content1 content2 content3"
+        "content4 content5 content6";
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: auto auto ; /* Solo 2 filas necesarias */
+    
+    gap: 10px; /* Espaciado opcional */
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top left,white,rgb(3, 255, 3));
+    
+}
+/* .esmeraldas{
+    display: grid;
+    grid-template-areas:
+     " content1 content2 content3 " 
+     "footer footer footer footer footer";
+    grid-template-columns:repeat(5,200px);
+    grid-template-rows: repeat(5,auto); 
+} */
+#content {
+    width: 80%; /* Ocupar todo el espacio disponible */
+    
+}
+.esmeralda{
+    background: white;
+    width: 160px;
+    /* box-sizing: border-box; */
+    /* height: 230px; */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgb(255, 255, 255);
+    /* box-shadow: 10px 10px 10px whitesmoke; */
+    grid-area: content1,;
+    /* border: 10px solid grey; */
+    margin: 0px;
+    align-items: center;
+    text-align: center; 
+    /* background-image:linear-gradient(top, green, white ); */
+    
+}
+p{
+    text-align: center;
+}
+a{
+    align-items: center;
+    padding-bottom: 100px;
+}
+span{
+    padding-top: 30px;
+}
+#imagen{
+    object-fit :cover;
+    width: 100%;
+    border-radius: 10px;
+    /* border-image:top ; */
+    height: auto;
+}
+#cuadro1{
+    background-color: rgb(0, 255, 255);
+    width: 100px;
+    height: 100px;
+    /* transition-property: width background-color;
+    transition-duration: 500ms;
+    transition-delay: 0s; */
+
+    transition: width 1s ;
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease; */
+    transition-timing-function: steps(4,jump-none); 
+
+
+}
+#cuadro1:hover{
+    width: 500px;
+    background-image:linear-gradient(to top left,white,green); 
+    /* transition: width 600ms 1s;  */
+}
